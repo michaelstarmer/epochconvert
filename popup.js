@@ -17,6 +17,7 @@ $('.ut').keyup(function(e){
   if(e.keyCode == 13)
   {
       unixToDate();
+      copyToClipboard(unixToDate());
   }
 });
 
@@ -24,6 +25,7 @@ $('.dt').keyup(function(e){
   if(e.keyCode == 13)
   {
       dateToUnix();
+      copyToClipboard(dateToUnix());
   }
 });
 
@@ -43,7 +45,7 @@ function unixToDate() {
   unixInput = Number(document.getElementById('ip_unix').value);
   let result = moment.unix(unixInput).format("YYYY-MM-DD HH:mm:ss");
   dateResult.innerHTML =  '<span>' + result + '</span>';
-  return true;
+  return result;
 }
 
 function dateToUnix() {
@@ -57,7 +59,10 @@ function dateToUnix() {
 
   let dateString = YYYY.value + '-' + MM.value + "-" + DD.value + " " + HH.value + ":" + MIN.value + ":" + SEC.value;
   console.log("Datestring", dateString);
-  unixResult.innerHTML = '<span>' + moment(dateString).unix() + '</span>'
+  let result = moment(dateString).unix();
+  unixResult.innerHTML = '<span>' + result + '</span>';
+
+  return result;
 }
 
 function initializeForms() {
