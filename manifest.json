@@ -1,5 +1,5 @@
 {
-  "name": "EpochMaister",
+  "name": "EpochConvert",
   "version": "1.0",
   "description": "Tool for converting UNIX timestamps and dates.",
   "permissions": [
