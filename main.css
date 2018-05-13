@@ -1,0 +1,54 @@
+body {
+  padding: 10px;
+}
+
+h4 {
+  text-align: center;
+}
+
+button {
+  padding: 7px;
+  width: 100%;
+}
+
+input {
+  padding: 4px;
+  font-size: 13px;
+}
+
+.unixtime span, .datetime span {
+  font-size: 14px;
+}
+
+.datetime .dt {
+  display: inline;
+  width: 20%;
+}
+
+.result {
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.unixtime {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.datetime {
+  text-align: center;
+}
+
+#tooltip {
+  text-align: center;
+  min-height: 30px;
+}
+
+#tooltip .tooltiptext {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.green {
+  color: #27ae60;
+}
